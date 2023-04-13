@@ -1,0 +1,16 @@
+<h2 class="title">O nome do meu primeiro filho é: {{name}}!</h2>
+<h3>A idade dele é: {{age}} anos</h3>
+<h3>Atualmente ele é {{atividade}}, no colégio: {{college}}</h3>
+<h3>Suas atividades favoritas são:</h3>
+<ul *ngFor="let hobbie of hobbies">
+  <li>{{hobbie}}</li>
+</ul>
+
+<div>
+  <a href="#">Veja mais sobre o Gael clicando aqui</a>
+</div>
+<br>
+<h3>Seus itens pessoais são:</h3>
+<ol *ngFor=" let item of itens">
+  <li>{{item.name}}, que é um(a) {{item.tipo}}</li>
+</ol>
